@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+#title{
+	text-align: center;
+}
+
+main {
+	margin: 40px;
+}
+
+p {
+	padding-left:	40px;
+	padding-right:	40px;
+}
+
+.sign-up {
+	text-align: center;
+}
+

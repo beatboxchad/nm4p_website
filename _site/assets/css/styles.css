@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#title {
+  text-align: center;
+}
+
+main {
+  margin: 40px;
+}
+
+p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.sign-up {
+  text-align: center;
+}
+
+nav {
+  border-top-color: black;
+  border-bottom-color: green;
+  border-width: 0;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-style: solid;
+}
+nav .current_page {
+  color: red;
+}
+nav .inactive_page {
+  color: black;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.event .flyer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

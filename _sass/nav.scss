@@ -1,0 +1,29 @@
+nav {
+
+	$nav_border_width: 10px;
+
+	border-top-color: black;
+	border-bottom-color: green;
+	border-width: 0;
+	border-top-width: $nav_border_width;
+	border-bottom-width: $nav_border_width;
+	border-style: solid;
+
+	.current_page {
+		color: red;
+	}
+
+	.inactive_page{
+		color: black
+	}
+
+	ul{
+		display: flex;
+		justify-content: center;
+	}
+	li{
+		list-style-type: none;
+		padding-left:	20px;
+		padding-right:	20px;
+	}
+}

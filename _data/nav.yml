@@ -1,0 +1,11 @@
+- name: Home
+  link: /
+
+- name: Events  
+  link: /events.html
+
+- name: Plug In
+  link: /plug.html
+
+- name: Band
+  link: /band.html
