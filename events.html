@@ -1,0 +1,11 @@
+---
+---
+<h2>Community Calendar</h2>
+
+<p>Come to our shows! Come to a protest! Come to a talk! Come to a film screening!</p>
+
+<div id="events">
+{% for event in site.events %}
+	<div class="event">{{ event.content | markdownify }}</div>
+{% endfor %}
+</div>

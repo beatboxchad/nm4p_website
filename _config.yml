@@ -1,0 +1,14 @@
+title: Nola Musicians for Palestine
+
+collections:
+  - events
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
