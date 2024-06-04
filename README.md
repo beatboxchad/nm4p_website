@@ -2,6 +2,7 @@
 ---
 
 # site structure
+- contact and join email list on every page except the chart pages
 
 ## Home
 
@@ -18,7 +19,7 @@ The community calendar, I was thinking cards scrolling horizontally?
 ## Plug In
 pretty regular blog where orgs can post updates
 
-## Band
+## Resources
 
 ### Rep List
 
@@ -39,4 +40,5 @@ Each song should have a page with
 ### Chart Pages
 	
 chart page should have the chart and the chart finder at the top
-	
+
+### Chant lists and examples of them with the website

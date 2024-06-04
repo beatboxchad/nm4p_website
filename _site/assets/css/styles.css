@@ -50,9 +50,27 @@ nav li {
   padding-right: 20px;
 }
 
+/* fit the image within it's div */
+.event .flyer {
+  overflow: hidden;
+}
 .event .flyer img {
   max-width: 100%;
   max-height: 100%;
+  height: 100%;
+}
+
+#events {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  gap: 30px;
+}
+#events .event {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 0 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */
