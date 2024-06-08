@@ -8,12 +8,15 @@
 	<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
   </head>
   <body>
+	<header>
+		<h1 id="title">{{ site.title }}</h1>  
+		{% include nav.html %}
+	</header>
     <main>
-		<header>
-			<h1 id="title">{{ site.title }}</h1>  
-			{% include nav.html %}
-		</header>
 		{{ content }}
 	</main>
+	<footer>
+		{% include footer.html %}
+	</footer>
   </body>
 </html>
