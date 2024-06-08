@@ -41,4 +41,6 @@ Each song should have a page with
 	
 chart page should have the chart and the chart finder at the top
 
-### Chant lists and examples of them with the website
+### Chants
+
+lists and examples of them with the rhythms
