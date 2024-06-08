@@ -7,6 +7,9 @@
 body{
 	margin: 0px;
 	padding: 0px;
+	a {
+		color: green;
+	}
 }
 
 #title{
@@ -26,3 +29,13 @@ p {
 	text-align: center;
 }
 
+/* flag colors
+background-image: linear-gradient(green 0%, green 33%, white 33%, white 66%, black 66%);
+*/
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 50px;
+	text-align: center;
+}
