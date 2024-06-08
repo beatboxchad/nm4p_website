@@ -18,20 +18,29 @@ body{
 
 main {
 	margin: 40px;
-}
 
-p {
-	padding-left:	40px;
-	padding-right:	40px;
+	.sign-up {
+		text-align: center;
+	}
+	p {
+		padding-left:	40px;
+		padding-right:	40px;
+	}
 }
-
-.sign-up {
-	text-align: center;
+.flag {
+	$height: 60px;
+	position: relative;
+	background-image: linear-gradient(black 0%, black 33%, white 33%, white 66%, green 66%);
+	height: $height;
+	.triangle {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		box-sizing: border-box;
+		border: calc($height / 2) solid rgba(0,0,0,0);
+		border-left-color: red;
+	}
 }
-
-/* flag colors
-background-image: linear-gradient(green 0%, green 33%, white 33%, white 66%, black 66%);
-*/
 
 footer {
 	background-color: black;
