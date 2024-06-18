@@ -31,11 +31,13 @@ Chart finder at the bottom
 song > part > transposition > clef >
 
 ### Song Pages
+
 Each song should have a page with
  - reference recordings
  - rehearsal recordings
  - arrangement notes
  - charts/files
+ - context
 
 ### Chart Pages
 	
