@@ -18,11 +18,14 @@ body{
 
 main {
 	margin: 40px;
+	@media only screen and (max-width: 500px){
+		margin: 0px;
+	}
 
 	.sign-up {
 		text-align: center;
 	}
-	p {
+	>p {
 		padding-left:	40px;
 		padding-right:	40px;
 	}
