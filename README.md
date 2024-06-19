@@ -2,47 +2,75 @@
 ---
 
 # site structure
-- contact and join email list on every page except the chart pages
+- [x] contact and join email list on every page
+- [ ] except the chart pages (half done, there's a chart layout now)
 
 ## Home
 
-- invite people to join
-- display the mission statement and members/endorsers/partners
-- members kept in data?
+- [x] invite people to join
+- [x] display the mission statement and members/endorsers/partners
 
-## Events
+## Go Out! Plug In!
 
-The community calendar, I was thinking cards scrolling horizontally?
-- may need an event 'post type' that either uses a flyer background or a text template
-- maybe it'd be good to filter or flip through quickly
+### Events
 
-## Plug In
-pretty regular blog where orgs can post updates
+#### Design
+
+- [x] Horizontal Scrolling cards
+- [x] flyer
+- [x] formatted info on click
+- [x] sort by date fuck ya it's automatic
+- [ ] date-based navigation (for later in javascript)
+- [x] do not show past events
+
+
+The community calendar,I was thinking cards scrolling horizontally?
+
+Flyers - forget supporting just text. you need a flyer.
+
+#### thoughts
+
+thoughts on easily getting people's events listed here:
+we could make an instagram account and follow only members
+set notification settings to get emails when anyone posts
+it'd be someone's job to check the email daily and post the new stuff on the site
+maybe that could be automated?
+
+Probably a better system would be to have an email go out to the contact we have on file for each org/band asking them to reply with their events and flyers
+
+
+### Updates from the Community
+- [ ] pretty regular blog where orgs can post updates
 
 ## Resources
 
 ### Rep List
 
-Current rep/not started/learning
-- song list maybe in data
+song list (stored in data)
 
-Chart finder at the bottom
+- [ ] Current rep
+- [ ] not started
+- [ ] learning
+- [ ] Chart finder at the bottom
 
-song > part > transposition > clef >
+Chart finder: 
+song v part v transposition v clef v
 
 ### Song Pages
 
 Each song should have a page with
- - reference recordings
- - rehearsal recordings
- - arrangement notes
- - charts/files
- - context
+ - [ ] reference recordings
+ - [ ] rehearsal recordings
+ - [ ] arrangement notes
+ - [ ] charts/files
+ - [ ] context
 
 ### Chart Pages
 	
-chart page should have the chart and the chart finder at the top
+- [ ] Chart
+- [ ] Chart Finder at the top
 
 ### Chants
 
-lists and examples of them with the rhythms
+- [ ] chant list
+- [ ] audio/video recording with a rhythm
