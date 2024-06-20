@@ -14,6 +14,9 @@
 
 ### Events
 
+The community calendar,I was thinking cards scrolling horizontally?
+Flyers - forget supporting just text. you need a flyer.
+
 #### Design
 
 - [x] Horizontal Scrolling cards
@@ -22,11 +25,6 @@
 - [x] sort by date fuck ya it's automatic
 - [ ] date-based navigation (for later in javascript)
 - [x] do not show past events
-
-
-The community calendar,I was thinking cards scrolling horizontally?
-
-Flyers - forget supporting just text. you need a flyer.
 
 #### thoughts
 
@@ -38,9 +36,14 @@ maybe that could be automated?
 
 Probably a better system would be to have an email go out to the contact we have on file for each org/band asking them to reply with their events and flyers
 
+I made nolamusicians4Palestine@gmail.com and made this event submission form (for the free storage)
+where people can upload their flyers and info
+
+I'm hoping to automate the posting/reviewing process
+
 
 ### Updates from the Community
-- [ ] pretty regular blog where orgs can post updates
+- [ ] regular blog where orgs can post updates
 
 ## Resources
 

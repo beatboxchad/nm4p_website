@@ -2,13 +2,7 @@ function setup_info_on_click(){
 	function toggle_info(e){
 		let event = e.target.closest(".event");
 		let info = event.querySelector(".info");
-		let display = getComputedStyle(info).display;
-		if(display == "block"){
-			info.style.display = "none";
-		}else{
-			info.style.display = "block";
-		}
-
+		info.classList.toggle("active");
 	}
 
 	let flyers = document.querySelectorAll(".flyer");
