@@ -51,7 +51,9 @@ I'm hoping to automate the posting/reviewing process
 	- [x] posts datastructure
 	- [ ] layout for posts
 
-## Resources
+## Brass Band
+
+- [ ] Upcoming Rehearsals and Shows
 
 ### Rep List
 
