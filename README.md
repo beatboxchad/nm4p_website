@@ -1,14 +1,13 @@
 ---
 ---
 
-# site structure
-- [x] contact and join email list on every page
-- [ ] except the chart pages (half done, there's a chart layout now)
+# site structure and status
 
 ## Home
 
 - [x] invite people to join
 - [x] display the mission statement and members/endorsers/partners
+(text is not final, I've gotta get what's been done on the doc)
 
 ## Go Out! Plug In!
 
@@ -45,12 +44,12 @@ I'm hoping to automate the posting/reviewing process
 
 ### Updates from the Community
 - [ ] regular blog where orgs can post updates
+	- [x] posts datastructure
+	- [ ] layout for posts
 
 ## Resources
 
 ### Rep List
-
-song list (stored in data)
 
 - [ ] Current rep
 - [ ] not started
@@ -78,3 +77,8 @@ Each song should have a page with
 
 - [ ] chant list
 - [ ] audio/video recording with a rhythm
+
+## every page (in the footer)
+
+- [x] contact and join email list on every page
+- [ ] except the chart pages (half done, there's a chart layout now)
