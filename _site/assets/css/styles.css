@@ -87,7 +87,7 @@ nav li {
   align-items: center;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 80vh;
+  height: 70vh;
   box-shadow: 0 0 25px -10px black;
   border-radius: 30px;
 }
