@@ -1,21 +1,29 @@
 #calendar {
 	display: flex;
 	flex-flow: row nowrap;
+	align-items: center;
 	overflow-x: scroll;
 	overflow-y: hidden;
-	gap: 30px;
 	height: 80vh;
-	@media only screen and (max-width: 700px){
-		height: 50vh;
-	}
+	@media only screen and (max-width: 700px){ height: 50vh; }
+
+	box-shadow: 0 0 25px -10px black;
+	border-radius: 30px;
 
 	.event {
-		height: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
+		/* border-radius: 30px; */
+		background-color: rgba(0,0,0,0.1);
+		box-shadow: 0 0 5px black;
+
+		height: 90%;
 		display: flex;
 		flex-flow: column nowrap;
 		.info {
 			flex: 0 0 auto;
 			display: none;
+			margin: 20px;
 		}
 		.flyer {
 			object-fit: contain;

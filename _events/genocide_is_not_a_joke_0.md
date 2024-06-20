@@ -1,5 +1,6 @@
 ---
 title: Genocide is Not a Joke - A People's Roast of Jerry Seinfeld
+org: the people
 date: 2024-6-20
 time: 6:30pm
 location: Outside the Sanger Theater
