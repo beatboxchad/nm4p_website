@@ -24,6 +24,7 @@ Flyers - forget supporting just text. you need a flyer.
 - [x] formatted info on click
 - [x] sort by date fuck ya it's automatic
 - [ ] date-based navigation (for later in javascript)
+- [ ] filter by event type (show/action/both)
 - [x] do not show past events
 
 #### thoughts
