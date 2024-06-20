@@ -17,11 +17,11 @@ body a {
 }
 
 main {
-  margin: 40px;
+  margin: 20px;
 }
 @media only screen and (max-width: 500px) {
   main {
-    margin: 10px;
+    margin: 0px;
   }
 }
 main .sign-up {
@@ -73,12 +73,12 @@ nav .inactive_page {
 }
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 0;
 }
-nav li {
+nav ul li {
+  text-align: center;
   list-style-type: none;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 #calendar {
@@ -87,25 +87,22 @@ nav li {
   align-items: center;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 70vh;
+  height: 75vh;
   box-shadow: 0 0 25px -10px black;
-  border-radius: 30px;
+  border-top: solid 10px;
+  border-bottom: solid 10px;
+  border-top-color: black;
+  border-bottom-color: green;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 700px) {
   #calendar {
-    height: 50vh;
+    height: 60vh;
   }
 }
 #calendar .event {
-  margin-left: 20px;
-  margin-right: 20px;
-  /* border-radius: 30px; */
-  box-shadow: 0 0 5px black;
+  margin: 10px;
   height: 90%;
-  /*
-  display: flex;
-  flex-flow: column nowrap;
-  */
   position: relative;
 }
 #calendar .event .info {
