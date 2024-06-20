@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body a {
+  color: green;
+}
+
+#title {
+  text-align: center;
+}
+
+main {
+  margin: 40px;
+}
+@media only screen and (max-width: 500px) {
+  main {
+    margin: 10px;
+  }
+}
+main .sign-up {
+  text-align: center;
+}
+main > p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.flag {
+  position: relative;
+  background-image: linear-gradient(black 0%, black 33%, white 33%, white 66%, green 66%);
+  height: 60px;
+}
+.flag .triangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 30px solid rgba(0, 0, 0, 0);
+  border-left-color: red;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+nav {
+  /*
+  	$nav_border_width: 10px;
+
+  	border-top-color: black;
+  	border-bottom-color: green;
+  	border-width: 0;
+  	border-top-width: $nav_border_width;
+  	border-bottom-width: $nav_border_width;
+  	border-style: solid;
+  */
+}
+nav .current_page {
+  color: red;
+}
+nav .inactive_page {
+  color: black;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#calendar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 80vh;
+  box-shadow: 0 0 25px -10px black;
+  border-radius: 30px;
+}
+@media only screen and (max-width: 700px) {
+  #calendar {
+    height: 50vh;
+  }
+}
+#calendar .event {
+  margin-left: 20px;
+  margin-right: 20px;
+  /* border-radius: 30px; */
+  box-shadow: 0 0 5px black;
+  height: 90%;
+  /*
+  display: flex;
+  flex-flow: column nowrap;
+  */
+  position: relative;
+}
+#calendar .event .info {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+#calendar .event .info.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+#calendar .event .flyer {
+  object-fit: contain;
+  height: 100%;
+  /* flex: 1 1 auto; */
+}
+
+/*# sourceMappingURL=styles.css.map */
