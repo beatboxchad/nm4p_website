@@ -1,11 +1,8 @@
 - name: Home
   link: /
 
-- name: Events  
+- name: Go Out! Plug In!  
   link: /events.html
 
-- name: Plug In
-  link: /plug.html
-
-- name: Band
+- name: Marching Band
   link: /band.html
