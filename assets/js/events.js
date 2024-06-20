@@ -46,5 +46,3 @@ function hide_past_events(){
 	});
 }
 hide_past_events();
-
-
