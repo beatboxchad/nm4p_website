@@ -1,4 +1,5 @@
 ---
+layout: readme
 ---
 
 # site structure and status
@@ -47,23 +48,29 @@ I'm hoping to automate the posting/reviewing process
 
 
 ### Updates from the Community
+
 - [ ] regular blog where orgs can post updates
 	- [x] posts datastructure
-	- [ ] layout for posts
+	- [x] layout for posts
+	- [ ] display list an
+
+#### design thoughts
+
+the latest update from each org should be displayed (excerpt only)
+click to see full update.
+
+then a list of all posts
 
 ## Brass Band
 
-- [ ] Upcoming Rehearsals and Shows
+- [x] Upcoming Rehearsals and Shows
 
 ### Rep List
 
 - [ ] Current rep
 - [ ] not started
 - [ ] learning
-- [ ] Chart finder at the bottom
 
-Chart finder: 
-song v part v transposition v clef v
 
 ### Song Pages
 
@@ -74,10 +81,22 @@ Each song should have a page with
  - [ ] charts/files
  - [ ] context
 
+#### thoughts:
+We should have naming convention for the chart files so that
+jekyll can automatically understand what part key and clef it is
+in order to make them available in the chart finder and the song pages.
+maybe: 
+```
+Song_name-Part-Transposition-clef.pdf
+```
+
 ### Chart Pages
 	
 - [ ] Chart
 - [ ] Chart Finder at the top
+
+Chart finder: 
+song v part v transposition v clef v
 
 ### Chants
 

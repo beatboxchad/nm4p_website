@@ -1,55 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nola Musicians for Palestine</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-	<link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
-  </head>
-  <body>
-	<header>
-		<h1 id="title">Nola Musicians for Palestine</h1>  
-		<nav>
-	<ul>
-	
-		<li>
-			<a
-				href="/"
-				
-					class="inactive_page"
-				
-			>Home</a>
-		</li>
-	
-		<li>
-			<a
-				href="/events.html"
-				
-					class="inactive_page"
-				
-			>Go Out! Plug In!</a>
-		</li>
-	
-		<li>
-			<a
-				href="/band.html"
-				
-					class="inactive_page"
-				
-			>Marching Band</a>
-		</li>
-	
-	</ul>
-</nav>
-
-	</header>
-		<div class="flag">
-	<div class="triangle"></div>
-</div>
-
-    <main>
-		<h1 id="site-structure-and-status">site structure and status</h1>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nola Musicians for Palestine | README</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="site-structure-and-status">site structure and status</h1>
 
 <h2 id="home">Home</h2>
 
@@ -98,19 +61,28 @@ where people can upload their flyers and info</p>
 <p>I’m hoping to automate the posting/reviewing process</p>
 
 <h3 id="updates-from-the-community">Updates from the Community</h3>
+
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />regular blog where orgs can post updates
     <ul class="task-list">
       <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />posts datastructure</li>
-      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />layout for posts</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />layout for posts</li>
+      <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />display list an</li>
     </ul>
   </li>
 </ul>
 
+<h4 id="design-thoughts">design thoughts</h4>
+
+<p>the latest update from each org should be displayed (excerpt only)
+click to see full update.</p>
+
+<p>then a list of all posts</p>
+
 <h2 id="brass-band">Brass Band</h2>
 
 <ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Upcoming Rehearsals and Shows</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Upcoming Rehearsals and Shows</li>
 </ul>
 
 <h3 id="rep-list">Rep List</h3>
@@ -119,11 +91,7 @@ where people can upload their flyers and info</p>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Current rep</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />not started</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />learning</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Chart finder at the bottom</li>
 </ul>
-
-<p>Chart finder: 
-song v part v transposition v clef v</p>
 
 <h3 id="song-pages">Song Pages</h3>
 
@@ -136,12 +104,23 @@ song v part v transposition v clef v</p>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />context</li>
 </ul>
 
+<h4 id="thoughts-1">thoughts:</h4>
+<p>We should have naming convention for the chart files so that
+jekyll can automatically understand what part key and clef it is
+in order to make them available in the chart finder and the song pages.
+maybe:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Song_name-Part-Transposition-clef.pdf
+</code></pre></div></div>
+
 <h3 id="chart-pages">Chart Pages</h3>
 
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Chart</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Chart Finder at the top</li>
 </ul>
+
+<p>Chart finder: 
+song v part v transposition v clef v</p>
 
 <h3 id="chants">Chants</h3>
 
@@ -157,25 +136,5 @@ song v part v transposition v clef v</p>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />except the chart pages (half done, there’s a chart layout now)</li>
 </ul>
 
-	</main>
-		<div class="flag">
-	<div class="triangle"></div>
-</div>
-
-	<footer>
-		<p id="Social">
-	Instagram: <a href="#insta" target="_blank">@NolaMusicians4Palestine</a>
-</p>
-<p id="email">
-	Email: <a href="mailto:nolamusicians4palestine@gmail.com">nolamusicians4palestine@gmail.com</a>
-</p>
-<p id="subscribe">
-	<a href="#some-google-form" target="_blank">Click here</a> to join our mailing list.
-</p>
-<p id="join">
-	<a href="#signup-form" target="_blank"> Be a musician for Palestine </a>
-</p>
-
-	</footer>
-  </body>
+</body>
 </html>
