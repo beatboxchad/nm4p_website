@@ -17,6 +17,32 @@ body h2 {
   padding: 20px;
 }
 
+.net-pattern-bg > h2 {
+  background-color: white;
+  margin: 30px;
+}
+
+.net-pattern-bg {
+  border: solid rgba(0, 0, 0, 0) 1px;
+  background-image: url("/assets/images/kuffiyeh_net.png");
+  background-repeat: repeat;
+  background-size: 20px;
+  margin: 20px;
+}
+
+.olive-pattern-bg > h2 {
+  background-color: white;
+  margin: 30px;
+}
+
+.olive-pattern-bg {
+  border: solid rgba(0, 0, 0, 0) 1px;
+  background-image: url("/assets/images/kuffiyeh_olive_leaves.png");
+  background-repeat: repeat;
+  background-size: 50px;
+  margin: 20px;
+}
+
 header {
   color: white;
   height: 90vh;
@@ -59,16 +85,16 @@ nav {
   z-index: 1;
 }
 
-.text-section {
+.centered-section {
   margin: auto;
   max-width: min(950px, 90vw);
 }
 @media only screen and (max-width: 500px) {
-  .text-section {
+  .centered-section {
     max-width: 90vw;
   }
 }
-.text-section .sign-up {
+.centered-section .sign-up {
   text-align: center;
 }
 
@@ -81,8 +107,8 @@ nav {
   justify-content: center;
 }
 .gallery-section .gallery .small-gallery-item {
-  flex: 0 1 300px;
-  height: 300px;
+  flex: 0 1 200px;
+  height: 200px;
   margin: 30px;
   display: flex;
   justify-content: center;
@@ -171,8 +197,7 @@ nav a {
   box-shadow: 0 0 25px -10px black;
   border-top: solid 10px;
   border-bottom: solid 10px;
-  border-top-color: black;
-  border-bottom-color: green;
+  border-color: black;
   border-radius: 5px;
   scrollbar-color: red white;
 }
@@ -212,6 +237,22 @@ nav a {
 
 #all-updates .post-author-org {
   font-weight: bold;
+}
+
+.latest-post {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.latest-post .org-and-title {
+  text-align: center;
+}
+.latest-post .org-and-title h3 {
+  display: inline;
+}
+.latest-post .org-and-title h4 {
+  display: inline;
 }
 
 /*# sourceMappingURL=styles.css.map */

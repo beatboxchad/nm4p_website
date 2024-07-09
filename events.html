@@ -1,11 +1,14 @@
 ---
 ---
-<h2>Calendar</h2>
+<div class="centered-section">
+	<div class="olive-pattern-bg">
+		<h2>Calendar</h2>
+	</div>
 
-<p>Come to our shows! Come to a protest! Come to a talk! Come to a film screening!</p>
+	<p>Come to our shows! Come to a protest! Come to a talk! Come to a film screening!</p>
 
-
-<div id="calendar">
+</div>
+<div id="calendar" class="net-pattern-bg">
 {% for event in site.events %}
 	<div id="event-{{ forloop.index0 }}" class="event" data-date="{{ event.date | date: '%Y%m%d' }}">
 		<img class="flyer"src="/assets/images/event_flyers/{{ event.flyer }}">
@@ -35,19 +38,32 @@
 
 <script src="/assets/js/events.js"></script>
 
-<h2>Updates</h2>
-<p>What's going on now, and how can you plug in to the various ongoing local efforts?</p>
-<div id="latest-updates">
-	{% for post in site.categories %}
+<div class="centered-section">
+	<div class="olive-pattern-bg">
+		<h2>Updates</h2>
+	</div>
+	<p>What's going on now, and how can you plug in to the various ongoing local efforts?</p>
+	<h3>Latest Updates:</h3>
+	<div id="latest-updates">
+		{% for post in site.categories %}
+			<div class="latest-post">
+				<div class="org-and-title">
+					<h3>{{ post[0] | capitalize}}:</h3>
+					<h4 class="post-title">{{post[1][0].title}}</h4>
+				</div>
+				<div class="post-content">
+					{{ post[1][0].content }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
 
-	{% endfor %}
-</div>
-
-<h3>All Updates </h3>
-<div id="all-updates">
-	{% for post in site.posts %}
-		<ul>
-			<li><span class="post-author-org">{{ post.org }}:</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-		</ul>
-	{% endfor %}
+	<h3>All Updates:</h3>
+	<div id="all-updates">
+		{% for post in site.posts %}
+			<ul>
+				<li><span class="post-author-org">{{ post.org }}:</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+			</ul>
+		{% endfor %}
+	</div>
 </div>

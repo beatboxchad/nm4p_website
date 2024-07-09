@@ -3,3 +3,21 @@
 		font-weight: bold;
 	}
 }
+
+.latest-post{
+	background-color: rgba(0,0,0, 0.1);
+	padding: 20px;
+	margin: 20px;
+	border-radius: 20px;
+
+	.org-and-title{
+		text-align: center;
+		h3{
+			display: inline;
+		}
+		h4{
+			display: inline;
+		}
+	}
+}
+

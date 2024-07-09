@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="3in"
+   height="3in"
+   viewBox="0 0 76.200001 76.2"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="../event_flyers/placeholder.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="flag_with_text.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="in"
+     inkscape:zoom="1.7053527"
+     inkscape:cx="131.35113"
+     inkscape:cy="152.16794"
+     inkscape:window-width="1916"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="60"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#006900;fill-rule:evenodd;stroke-width:0.804225;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+       id="rect1"
+       width="25.4"
+       height="76.200005"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.804225;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+       id="rect1-5"
+       width="25.4"
+       height="76.200005"
+       x="25.4"
+       y="-1.1920929e-06" />
+    <rect
+       style="fill:#000000;fill-rule:evenodd;stroke-width:0.804225;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+       id="rect1-2"
+       width="25.4"
+       height="76.200005"
+       x="50.799999"
+       y="1.6042327e-07" />
+    <path
+       sodipodi:type="star"
+       style="fill:#b90000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.835819;stroke-linecap:round;stroke-linejoin:round"
+       id="path3"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="0"
+       sodipodi:cy="0"
+       sodipodi:r1="48.811161"
+       sodipodi:r2="24.405582"
+       sodipodi:arg1="-0.52359878"
+       sodipodi:arg2="0.52359878"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 42.271705,-24.405581 2.1485215e-7,48.811161 -42.271706,-24.40558 Z"
+       inkscape:transform-center-y="7.3770528"
+       transform="matrix(0.9013121,0,0,0.60453815,38.1,14.754105)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:9.87778px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="37.709831"
+       y="12.648859"
+       id="text3"><tspan
+         sodipodi:role="line"
+         style="font-size:9.87778px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="37.709831"
+         y="12.648859"
+         id="tspan5">Event Flyer</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:9.87778px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="37.709831"
+         y="24.996084"
+         id="tspan1">Placeholder</tspan></text>
+  </g>
+</svg>
