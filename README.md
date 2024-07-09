@@ -9,8 +9,8 @@ layout: readme
 - [x] invite people to join
 - [x] display the mission statement and members/endorsers/partners
 (text is not final, I've gotta get what's been done on the doc)
-- [ ] photos of the band (being compiled)
-- [ ] look good
+- [x] photos of the band (being compiled)
+- [x] look good
 
 once the text and images are there I think we can publish it and make the other parts of the site "coming soon"
 

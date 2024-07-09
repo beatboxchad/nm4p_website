@@ -1,12 +1,14 @@
 ---
 ---
-<div class="text-section">
+<div class="centered-section">
 	<div class="sign-up">
 		<h2>Are you a musician in New Orleans?</h2>
 		<h3><a href="https://forms.gle/rSBGQTt4z4Lo4z2P8" target="_blank">Lend your voice to the Palestinian people</a></h3>
 	</div>
 
-	<h2>Who Are We?</h2>
+	<div class="olive-pattern-bg">
+		<h2>Who Are We?</h2>
+	</div>
 
 	<p>
 		NM4P is a group of New Orleans-based musicians
@@ -23,22 +25,26 @@
 	</p>
 
 
-	<h2>What's Our Vision</h2>
+	<div class="olive-pattern-bg">
+		<h2>What's Our Vision?</h2>
+	</div>
 
 	<p>Ultimately, we envision an end to the occupation and the subjugation of Palestinians by those who have usurped their rightful sovereignty to the land they have stewarded for thousands of years. An end to their slaughter and starvation, an end to international funding and support for the genocide and oppression of the Palestinians. We envision Palestinians with their homes, families and limbs intact, living in peace on their land. We envision a world where all people have self determination, a world where people can live without subjugation to the powers of imperialism and capital. </p>
 	<p>To that end, we envision a New Orleans where solidarity with oppressed and indigenous peoples is woven into every performance, where we make our solidarity visible and audible to all those who pass through, so that all the people of the town have their hearts synched with the call of liberation and all the citizens of the world who visit this beautiful city return to their homes pollinated with that solidarity, changed from within by our music. Our mission is to mobilize the musicians of this town, to provide an avenue for musicians to use our collective voice to speak out against apartheid, genocide, racism, fascism and imperialism, in support of the Palestinian struggle and the interconnected struggles of Sudan, DRC, Haiti, and other oppressed peoples, to channel our energy and the energy of our audiences towards local organizing efforts, to make every gig a place where people get updated and learn ways to contribute, and to energize protests, rallies and other actions with music and rhythm.</p>
 	<p>Music is a powerful tool for social change. We embrace the use of music in the service of liberation, as a means of community building and community care. We embrace the use of music in the building of revolutionary consciousness in individuals, and of revolutionary culture in our communities. Too often, music is bent to power and loses its heart. As musicians, we have the responsibility to provide an alternative model for cultural expression and resistance which contextualizes the music we play. Merely appreciating the cultures of oppressed peoples is not a sufficient act of solidarity, if we are not also actively engaged in working for liberation.</p>
 </div>
 
-<div class="gallery-section"</div>
+<div class="gallery-section">
 	<h2>Members and Organizational Partners</h2>
 	<div class="gallery">
 		{% for member in site.data.members %}
-			<div class="small-gallery-item">
-				<img src="/assets/images/member_photos/{{ member.image }}" class="gallery-item-img"/>
-				<div class="gallery-item-img-overlay"></div>
-				<a href="{{ member.link }}" target="_blank">{{ member.name }}</a>
-			</div>
+			{% if member.status == "member" %}
+				<div class="small-gallery-item">
+					<img src="/assets/images/member_photos/{{ member.image }}" class="gallery-item-img"/>
+					<div class="gallery-item-img-overlay"></div>
+					<a href="{{ member.link }}" target="_blank">{{ member.name }}</a>
+				</div>
+			{% endif %}
 		{% endfor %}
 	</div>
 </div>

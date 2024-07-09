@@ -12,12 +12,39 @@ body{
 	a {
 		color: green;
 	}
-
 	h2 {
 		text-align: center;
 		padding: 20px;
 	}
+
 }
+
+.net-pattern-bg > h2{
+	background-color: white;
+	margin: 30px;
+}
+
+.net-pattern-bg{
+	border: solid rgba(0,0,0,0) 1px;
+	background-image: url("/assets/images/kuffiyeh_net.png");
+	background-repeat: repeat;
+	background-size: 20px;
+	margin: 20px;
+}
+
+.olive-pattern-bg > h2{
+	background-color: white;
+	margin: 30px;
+}
+
+.olive-pattern-bg{
+	border: solid rgba(0,0,0,0) 1px;
+	background-image: url("/assets/images/kuffiyeh_olive_leaves.png");
+	background-repeat: repeat;
+	background-size: 50px;
+	margin: 20px;
+}
+
 
 header{
 	color: white;
@@ -62,7 +89,7 @@ nav{
 	z-index: 1;
 }
 
-.text-section {
+.centered-section {
 	margin: auto;
 	max-width: min(950px, 90vw);
 	@media only screen and (max-width: 500px){
@@ -81,6 +108,7 @@ nav{
 		hsl(120deg, 50%, 90%)
 	);
 
+
 	.gallery {
 		display: flex;
 		flex-flow: row wrap;
@@ -88,6 +116,9 @@ nav{
 
 		.small-gallery-item {
 			$size: 300px;
+			@media only screen and (max-width: 500px){
+				$size: 200px;
+			}
 			flex: 0 1 $size;
 			height: $size;
 			margin: 30px;
