@@ -107,3 +107,9 @@ song v part v transposition v clef v
 
 - [x] contact and join email list on every page
 - [ ] except the chart pages (half done, there's a chart layout now)
+
+
+
+# website stuff
+
+the git history is all fucked up. I only want to keep the live branch
