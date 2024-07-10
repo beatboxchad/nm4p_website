@@ -13,7 +13,7 @@
   image: "placeholder.png"
   status: "unknown"
 
-- name: Sirocco
+- name: Sirocco Brass Band
   link: "https://www.instagram.com/siroccobrass/"
   image: "sirocco.jpg"
   status: "member"
@@ -23,7 +23,7 @@
   image: "placeholder.png"
   status: "member"
 
-- name: Noship
+- name: NOSHIP
   link: "#"
   image: "placeholder.png"
   status: "member"
