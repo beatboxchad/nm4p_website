@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
 *,
 *::before,
 *::after {
@@ -5,7 +6,7 @@
 }
 
 body {
-  font-family: helvetica;
+  font-family: "Josefin Sans";
   margin: 0px;
   padding: 0px;
 }
@@ -15,6 +16,8 @@ body a {
 body h2 {
   text-align: center;
   padding: 20px;
+  font-family: "Josefin Slab";
+  font-weight: bold;
 }
 
 .net-pattern-bg > h2 {
@@ -70,6 +73,8 @@ header {
 }
 
 #title {
+  font-family: "Josefin Slab";
+  font-weight: bold;
   z-index: 1;
   margin: 0;
   text-align: center;
@@ -98,7 +103,35 @@ nav {
   text-align: center;
 }
 
+#vision p {
+  margin: 100px 0;
+}
+#vision p::first-letter {
+  font-family: "Josefin Slab";
+  font-size: 2em;
+  font-weight: bold;
+}
+#vision p:first-child {
+  margin-top: 0px;
+}
+#vision p:last-child {
+  margin-bottom: 0px;
+}
+
+.float {
+  width: 30%;
+  height: auto;
+  margin: 10px;
+}
+.float.right {
+  float: right;
+}
+.float.left {
+  float: left;
+}
+
 .gallery-section {
+  clear: both;
   background-image: linear-gradient(45deg, hsl(0, 50%, 90%), hsl(120, 50%, 90%));
 }
 .gallery-section .gallery {
@@ -173,6 +206,8 @@ nav .inactive_page {
   color: white;
 }
 nav ul {
+  font-family: "Josefin Slab";
+  font-weight: bold;
   display: flex;
   justify-content: space-evenly;
   padding: 0;
