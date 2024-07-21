@@ -30,7 +30,7 @@ body h2 {
   background-image: url("/assets/images/kuffiyeh_net.png");
   background-repeat: repeat;
   background-size: 20px;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 .olive-pattern-bg > h2 {
@@ -43,7 +43,7 @@ body h2 {
   background-image: url("/assets/images/kuffiyeh_olive_leaves.png");
   background-repeat: repeat;
   background-size: 50px;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 header {
@@ -122,6 +122,11 @@ nav {
   width: 30%;
   height: auto;
   margin: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .float {
+    width: 50%;
+  }
 }
 .float.right {
   float: right;
@@ -228,7 +233,7 @@ nav a {
   align-items: center;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 75vh;
+  height: 50vh;
   box-shadow: 0 0 25px -10px black;
   border-top: solid 10px;
   border-bottom: solid 10px;
@@ -238,7 +243,7 @@ nav a {
 }
 @media only screen and (max-width: 700px) {
   #calendar {
-    height: 60vh;
+    height: 50vh;
   }
 }
 #calendar .event {
