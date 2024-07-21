@@ -9,7 +9,6 @@ link:
 link_text:
 ---
 
-
 Music Lineup:
 
 - C'est Funk

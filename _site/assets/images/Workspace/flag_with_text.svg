@@ -7,7 +7,7 @@
    viewBox="0 0 76.200001 76.2"
    version="1.1"
    id="svg1"
-   inkscape:export-filename="../event_flyers/placeholder.png"
+   inkscape:export-filename="../event_flyers/no-more.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
@@ -27,74 +27,94 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="in"
      inkscape:zoom="1.7053527"
-     inkscape:cx="131.35113"
+     inkscape:cx="131.64432"
      inkscape:cy="152.16794"
      inkscape:window-width="1916"
-     inkscape:window-height="997"
+     inkscape:window-height="1037"
      inkscape:window-x="0"
-     inkscape:window-y="60"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      showgrid="false" />
   <defs
-     id="defs1" />
+     id="defs1">
+    <rect
+       x="95.999998"
+       y="144.00001"
+       width="271.32113"
+       height="105.86646"
+       id="rect4" />
+    <rect
+       x="395.53337"
+       y="49.001378"
+       width="69.073911"
+       height="49.52258"
+       id="rect2" />
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#006900;fill-rule:evenodd;stroke-width:0.804225;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
-       id="rect1"
-       width="25.4"
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+       id="rect6"
+       width="76.200005"
        height="76.200005"
        x="0"
        y="0" />
-    <rect
-       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.804225;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
-       id="rect1-5"
-       width="25.4"
-       height="76.200005"
-       x="25.4"
-       y="-1.1920929e-06" />
-    <rect
-       style="fill:#000000;fill-rule:evenodd;stroke-width:0.804225;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
-       id="rect1-2"
-       width="25.4"
-       height="76.200005"
-       x="50.799999"
-       y="1.6042327e-07" />
-    <path
-       sodipodi:type="star"
-       style="fill:#b90000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.835819;stroke-linecap:round;stroke-linejoin:round"
-       id="path3"
-       inkscape:flatsided="true"
-       sodipodi:sides="3"
-       sodipodi:cx="0"
-       sodipodi:cy="0"
-       sodipodi:r1="48.811161"
-       sodipodi:r2="24.405582"
-       sodipodi:arg1="-0.52359878"
-       sodipodi:arg2="0.52359878"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="M 42.271705,-24.405581 2.1485215e-7,48.811161 -42.271706,-24.40558 Z"
-       inkscape:transform-center-y="7.3770528"
-       transform="matrix(0.9013121,0,0,0.60453815,38.1,14.754105)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:9.87778px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:9.87778px;line-height:1.25;font-family:sans-serif;text-align:center;text-anchor:middle;white-space:pre;inline-size:76.9803;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="37.709831"
        y="12.648859"
-       id="text3"><tspan
-         sodipodi:role="line"
-         style="font-size:9.87778px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+       id="text3"
+       transform="matrix(0.92808331,0,0,0.92808331,2.9424925,4.6522578)"><tspan
          x="37.709831"
          y="12.648859"
-         id="tspan5">Event Flyer</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:9.87778px;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         id="tspan5"><tspan
+           style="font-weight:bold;font-family:'Josefin Slab';-inkscape-font-specification:'Josefin Slab, Bold'"
+           id="tspan3">No More Events</tspan><tspan
+           y="12.648859"
+           id="tspan6"> </tspan></tspan><tspan
          x="37.709831"
-         y="24.996084"
-         id="tspan1">Placeholder</tspan></text>
+         y="25.203517"
+         id="tspan8"><tspan
+           style="font-weight:bold;font-family:'Josefin Slab';-inkscape-font-specification:'Josefin Slab, Bold'"
+           id="tspan7">On Our Radar</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458334)"
+       id="text2"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#000000;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.24486163,0,0,0.24486163,-18.624682,5.5776277)"
+       id="text4"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect4);display:inline;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="131.22409"
+       y="0"><tspan
+         x="152.8681"
+         y="158"
+         id="tspan10"><tspan
+           style="font-weight:500;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans, Medium';text-align:center;text-anchor:middle"
+           id="tspan9">Is something missing?
+</tspan></tspan><tspan
+         x="190.35611"
+         y="178.336"
+         id="tspan12"><tspan
+           style="font-weight:500;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans, Medium';text-align:center;text-anchor:middle"
+           id="tspan11">Email us at </tspan></tspan><tspan
+         x="99.172058"
+         y="198.672"
+         id="tspan14"><tspan
+           style="font-weight:500;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans, Medium';text-align:center;text-anchor:middle"
+           id="tspan13">nolamusicians4Palestine@gmail.com</tspan></tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.706316;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7"
+       width="70.631622"
+       height="70.631622"
+       x="2.7841914"
+       y="2.7841914" />
   </g>
 </svg>

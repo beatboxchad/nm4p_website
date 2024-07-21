@@ -34,9 +34,8 @@ function hide_past_events(){
 		let event_date = parseInt(event.dataset.date);
 		console.log(event_date, today);
 		if(today > event_date){
-			console.log("deleting");
 			cal.removeChild(event);
 		}
 	});
 }
-//hide_past_events();
+hide_past_events();

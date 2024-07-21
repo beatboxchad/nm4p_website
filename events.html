@@ -21,14 +21,18 @@
 				<h3>What:</h3>
 				{{ event.title }}
 			</div>
+			{% if event.location %}
 			<div class="location">
 				<h3>Where:</h3>
 				{{ event.location }}
 			</div>
+			{% endif %}
+			{% if event.date %}
 			<div class="date-and-time">
 				<h3>When:</h3>
 				{{ event.date | date: "%A, %b %d %Y"}} {{ event.time }}
 			</div>
+			{% endif %}
 			<div class="description">{{ event.content }}</div>
 			<a class="link" href="{{ event.link }}">{{ event.link_text }}</a>
 		</div>
