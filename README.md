@@ -14,7 +14,7 @@ layout: readme
 
 once the text and images are there I think we can publish it and make the other parts of the site "coming soon"
 
-## Go Out! Plug In!
+## Plug In!
 
 ### Events
 
@@ -30,6 +30,7 @@ Flyers - forget supporting just text. you need a flyer.
 - [ ] date-based navigation (for later in javascript)
 - [ ] filter by event host (org/band...) ?
 - [x] do not show past events
+- [ ] make something to show for when there are no upcoming events
 
 #### thoughts
 
@@ -60,6 +61,8 @@ the latest update from each org should be displayed (excerpt only)
 click to see full update.
 
 then a list of all posts
+
+Each org should have a page that is their first post and then a list of their other posts
 
 ## Brass Band
 

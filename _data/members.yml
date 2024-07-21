@@ -1,7 +1,7 @@
 - name: Simon Moushabeck
   link: "https://www.simonmoush.com"
   image: "simon.jpg"
-  status: "member"
+  status: "website-not-ready"
 
 - name: Nola Strings for Palestine
   link: "#"
@@ -24,7 +24,7 @@
   status: "member"
 
 - name: NOSHIP
-  link: "#"
+  link: "orgs/noship/"
   image: "placeholder.png"
   status: "member"
 
@@ -44,7 +44,7 @@
   status: "unknown"
 
 - name: Ceasefire
-  link: "#"
+  link: "orgs/ceasefire/"
   image: "placeholder.png"
   status: "member"
 

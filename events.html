@@ -45,16 +45,18 @@
 	<p>What's going on now, and how can you plug in to the various ongoing local efforts?</p>
 	<h3>Latest Updates:</h3>
 	<div id="latest-updates">
-		{% for post in site.categories %}
+		{% for cat in site.categories %}
+		{% if  cat[0] != "orgs" %}
 			<div class="latest-post">
 				<div class="org-and-title">
-					<h3>{{ post[0] | capitalize}}:</h3>
-					<h4 class="post-title">{{post[1][0].title}}</h4>
+					<h3>{{ cat[0] | capitalize}}:</h3>
+					<h4 class="cat-title">{{cat[1][0].title}}</h4>
 				</div>
-				<div class="post-content">
-					{{ post[1][0].content }}
+				<div class="cat-content">
+					{{ cat[1][0].content }}
 				</div>
 			</div>
+		{% endif %}
 		{% endfor %}
 	</div>
 
