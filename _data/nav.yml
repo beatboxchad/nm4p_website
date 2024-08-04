@@ -1,8 +1,8 @@
 - name: Home
-  link: /home.html
+  link: /
 
 - name: Plug In
   link: /events.html
 
-- name: Marching Band
-  link: /band.html
+#- name: Marching Band
+#  link: /band.html
