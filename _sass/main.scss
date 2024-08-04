@@ -206,20 +206,18 @@ nav{
 }
 
 .flag {
-	$height: 40px;
 	position: relative;
 	background-image: linear-gradient(black 0%, black 33%, white 33%, white 66%, green 66%);
-	height: $height;
+	height: 40px;
 	.triangle {
 		position: absolute;
 		height: 100%;
 		width: 100%;
 		box-sizing: border-box;
-		border: calc($height / 2) solid rgba(0,0,0,0);
+		border: calc(40px / 2) solid rgba(0,0,0,0);
 		border-left-color: red;
 	}
 }
-
 
 footer {
 	background-color: black;
