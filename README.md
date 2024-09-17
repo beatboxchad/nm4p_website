@@ -93,6 +93,9 @@ maybe:
 Song_name-Part-Transposition-clef.pdf
 ```
 
+I'm implementing songs as collections. so to add a song you add a md file to the \_songs folder with the appropriate metadata, content can be used for context and arrangement notes
+I should make a custom layout (maybe child layout?) that has the different charts/files
+
 ### Chart Pages
 	
 - [ ] Chart

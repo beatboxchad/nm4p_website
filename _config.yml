@@ -3,18 +3,17 @@ title: Nola Musicians for Palestine
 collections:
   events:
   songs:
+    output: true
 
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "pages"
     values:
       layout: "default"
 
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
