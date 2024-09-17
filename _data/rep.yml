@@ -1,3 +1,44 @@
-- name: Anna Dammi Falastini
-  song_page: ""
+- name: Zeina
+  page_link: ""
   charts_folder: ""
+  status: "current"
+
+- name: Leve Palestina
+  page_link: ""
+  charts_folder: ""
+  status: "current"
+
+- name: Enta Omry
+  page_link: ""
+  charts_folder: ""
+  status: "current"
+
+- name: Bil Afrah Medley
+  page_link: ""
+  charts_folder: ""
+  status: "current"
+
+- name: Palestinian Folk Medley (Ya Zarif a'Tul, 3ala Del3ouna, Wein 3a Ramallah)
+  page_link: ""
+  charts_folder: ""
+  status: "current"
+
+- name: Tarweedeh Ta3liaeen Medley
+  page_link: ""
+  charts_folder: ""
+  status: "learning"
+
+- name: Bahlam Beek
+  page_link: ""
+  charts_folder: ""
+  status: "learning"
+
+- name: Democracy Now! Theme
+  page_link: ""
+  charts_folder: ""
+  status: "future"
+
+- name: Watermelon Man
+  page_link: ""
+  charts_folder: ""
+  status: "future"
