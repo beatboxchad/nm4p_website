@@ -20,7 +20,6 @@ defaults:
       layout: "post"
 
   - scope:
-      path: ""
       type: "songs"
     values:
       layout: "song"
