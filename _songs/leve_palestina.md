@@ -6,4 +6,5 @@ status: current
 arranger: Simon Moushabeck
 ---
 
-sample content for Leve Palestina
+## Context
+Swedish band Kofia, lyrics say "free palestine and crush zionism"

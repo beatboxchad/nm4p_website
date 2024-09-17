@@ -5,11 +5,17 @@ layout: default
 <div class="centered-section">
 	<h1>{{ page.title }}</h1>
 	{{ page.content }}
+
+	<hr>
+	<p>The context provided here is basically filler material. If you want to write something nice about these songs please email us</p>
+
+	<hr>
 	<h2>Charts</h2>
 	<ul>
 	{% assign chart_files = site.static_files | where_exp: "chart_file", "chart_file.path contains page.charts_folder" %}
 	{% for chart in chart_files %}
-		<li><a href="{{ chart.path | absolute_url }}">{{ chart.basename }}</a></li>
+		<li><a target="_blank" href="{{ chart.path | absolute_url }}">{{ chart.basename }}</a></li>
 	{% endfor %}
 	</ul>
+
 </div>

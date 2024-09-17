@@ -8,8 +8,6 @@ arranger: Simon Moushabeck
 ---
 
 ## Context
-sample content for folk medley
+Three of the most well known Palestinian folk songs.
 
 ## Arrangement Notes
-
-stuff stuff stuff

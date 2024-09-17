@@ -5,4 +5,5 @@ status: learning
 arranger: Ashlae Blum
 ---
 
-sample content for tarweedeh
+## Context
+Tarweedeh is Palestinian folk song in a coded kind of speech sung to help prisoners escape from British/Israeli prisons

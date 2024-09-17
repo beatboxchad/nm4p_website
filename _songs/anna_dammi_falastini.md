@@ -6,4 +6,5 @@ status: current
 arranger: Simon Moushabeck
 ---
 
-sample content
+## Context
+Mohammed Assef sang this on Arab Idol

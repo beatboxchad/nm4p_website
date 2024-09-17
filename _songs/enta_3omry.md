@@ -5,5 +5,3 @@ charts_folder: assets/charts/enta_3omry
 status: current
 arranger: Simon Moushabeck
 ---
-
-sample content

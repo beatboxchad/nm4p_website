@@ -5,5 +5,3 @@ charts_folder: assets/charts/democracy_now
 status: future
 arranger: 
 ---
-
-sample content

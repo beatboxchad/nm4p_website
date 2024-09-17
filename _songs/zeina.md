@@ -6,4 +6,3 @@ status: current
 arranger: Simon Moushabeck (based on Hossam Ramzy's Arrangement)
 ---
 
-sample content for Zeina
