@@ -1,8 +1,3 @@
-- name: Simon Moushabeck
-  link: "https://www.simonmoush.com"
-  image: "simon.jpg"
-  status: "website-not-ready"
-
 - name: Nola Strings for Palestine
   link: "#"
   image: "placeholder.png"
@@ -28,7 +23,12 @@
   image: "placeholder.png"
   status: "member"
 
-- name: Pym
+- name: QTCAP
+  link: "https://www.instagram.com/qtcap_nola/"
+  image: "placeholder.png"
+  status: "unknown"
+
+- name: PYM
   link: "#"
   image: "placeholder.png"
   status: "unknown"
