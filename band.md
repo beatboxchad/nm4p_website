@@ -1,7 +1,6 @@
 ---
 layout: band
 ---
-
 ## Upcoming Rehearsals and Actions
 
 ### HONK! Rehearsals (location TBD):
