@@ -3,10 +3,9 @@ layout: band
 ---
 ## Upcoming Rehearsals and Actions
 
-### HONK! Rehearsals (location TBD):
+### HONK! Rehearsals at the City Park Peristyle (42 Dreyfous Dr, New Orleans, LA 70124)
 
-1. Sunday 9/22, 3-5pm
-2. Sunday 9/29, 3-5pm
+1. Sunday 9/29, 3-5pm
 
 ### Regular Rehearsals:
 

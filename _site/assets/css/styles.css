@@ -267,6 +267,8 @@ nav a {
   opacity: 0;
   transition: opacity 0.5s;
   pointer-events: none;
+  max-height: 50%;
+  overflow: scroll;
 }
 #calendar .event .info h3 {
   display: inline;
