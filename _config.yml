@@ -1,5 +1,12 @@
 title: Nola Musicians for Palestine
 
+exclude: 
+  - assets/recordings/src/
+  - assets/images/event_flyers/old/
+  - assets/images/Workspace/
+  - _events/old/
+
+
 collections:
   events:
   songs:
