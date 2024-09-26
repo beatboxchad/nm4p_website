@@ -238,7 +238,7 @@ nav a {
   align-items: center;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 50vh;
+  height: 75vh;
   box-shadow: 0 0 25px -10px black;
   border-top: solid 10px;
   border-bottom: solid 10px;
@@ -248,7 +248,7 @@ nav a {
 }
 @media only screen and (max-width: 700px) {
   #calendar {
-    height: 50vh;
+    height: 54vh;
   }
 }
 #calendar .event {
