@@ -3,16 +3,16 @@ layout: band
 ---
 ## Upcoming Rehearsals and Actions
 
-### HONK! Rehearsals at the City Park Peristyle (42 Dreyfous Dr, New Orleans, LA 70124)
+### HONK! Rehearsals:
+1. Sunday 9/29, 3-5pm @ City Park Peristyle
 
-1. Sunday 9/29, 3-5pm
+### HONK! Logistics Meeting:
+Monday Sept. 30th @ 4pm. (Zoom link forthcoming)
 
 ### Regular Rehearsals:
-
-Thursday 9/26, 7-9pm at the Peristyle in City Park
+TODO: Schedule next rehearsal
 
 ## Rep List
-
 ### Current Rep
 
 {% for song in site.songs %}
