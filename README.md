@@ -70,10 +70,11 @@ Each org should have a page that is their first post and then a list of their ot
 
 ### Rep List
 
-- [ ] Current rep
-- [ ] not started
-- [ ] learning
+- [x] Current rep
+- [x] not started
+- [x] learning
 
+TODO: add lama bada?
 
 ### Song Pages
 
