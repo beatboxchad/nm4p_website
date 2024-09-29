@@ -40,3 +40,8 @@ If you want to make an arrangement that'd be cool.
 {% endif %}
 {% endfor %}
 
+## Resources
+
+[Chants with Arabic Rhythms](/chants_and_rhythms.html)
+
+[Maqam World](https://maqamworld.com/)
