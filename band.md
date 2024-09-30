@@ -4,7 +4,7 @@ layout: band
 ## Upcoming Rehearsals and Actions
 
 ### HONK! Logistics Meeting:
-Monday Sept. 30th @ 4pm. (google meet link in NM4P HONK! chat description)
+Monday Sept. 30th @ 4pm. (link in NM4P HONK! chat description)
 
 ### Regular Rehearsals:
 TODO: Schedule next rehearsal
