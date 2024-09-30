@@ -3,11 +3,8 @@ layout: band
 ---
 ## Upcoming Rehearsals and Actions
 
-### HONK! Rehearsals:
-1. Sunday 9/29, 3-5pm @ City Park Peristyle
-
 ### HONK! Logistics Meeting:
-Monday Sept. 30th @ 4pm. (Zoom link forthcoming)
+Monday Sept. 30th @ 4pm. (google meet link in NM4P HONK! chat description)
 
 ### Regular Rehearsals:
 TODO: Schedule next rehearsal
