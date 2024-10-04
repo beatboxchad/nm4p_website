@@ -1,5 +1,5 @@
 ---
-layout: band
+layout: education-action-resources
 ---
 
 ## Just a few actions you could take:
