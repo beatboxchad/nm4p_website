@@ -11,14 +11,19 @@ nav {
 		font-family: "Josefin Slab";
 		font-weight: bold;
 		display: flex;
+		flex-direction: row;
 		justify-content: space-evenly;
 		padding: 0;
+		@media only screen and (max-width: 725px){
+			flex-direction: column;
+		}
 
 		li{
 			text-align: center;
 			list-style-type: none;
 			text-transform: uppercase;
 			font-weight: bold;
+			margin: 5px;
 		}
 	}
 	a{
