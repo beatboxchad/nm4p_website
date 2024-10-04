@@ -22,7 +22,7 @@ layout: band
 - 	Bisan Owda: @wizard_bisan1 on Instagram
 - 	Hind Khoudary: @hindkhoudary on Instagram
 - 	Motaz Azaiza: @motaz_azaiza on Instagram
-- 	Plestia Alaqad: @byplestia on Instagram\
+- 	Plestia Alaqad: @byplestia on Instagram
 - 	Jenan Matari: @jenanmatari on Instagram
 - 	Ahmed Eldin: @ahmedeldin on Instagram
 - 	Yaffa:  @yaffasutopia on Instagram
