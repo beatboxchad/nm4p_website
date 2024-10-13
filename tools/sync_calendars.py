@@ -137,7 +137,7 @@ def event_as_post(event):
     post.metadata['date'] = day
     post.metadata['time'] = f'{start_time} - {end_time}'
     post.metadata['orgOrBandName'] = event['organizer'].get('displayName', event['organizer']['email'])
-    post.content = event['description']
+    post.content = event.get('description', event['summary'])
 
     return post
 
