@@ -99,8 +99,9 @@ def fetch_drive_attachment(attachment):
 def get_first_image_attachment(event):
     attachments = event.get('attachments', [])
 
-    if not attachments[0]:
-        print("No attachments found for this event.")
+    if not attachments:
+        print(f"No attachments found for event {event['summary']}.")
+        return None
 
 
     # Loop through attachments and find the first image
@@ -112,8 +113,6 @@ def get_first_image_attachment(event):
             print(f"Found image attachment: {attachment['title']}")
             return fetch_drive_attachment(attachment)
 
-    print("No image attachments found.")
-    return None
 
 
 def read_event_template(path):
