@@ -76,17 +76,17 @@ def fetch_events():
         print(f"An error occurred: {error}")
 
 def fetch_drive_attachment(attachment):
-    service = authenticate_google_drive()
-    
-    file_url = attachment.get('fileUrl')
-    file_name = attachment['title']
-    file_id = attachment['fileId']
-    print(file_id)
-    file_path= f"./assets/images/event_flyers/{attachment['title']}"
+    def destination_filename(attachment):
+        extension = f".{attachment['mimeType'].split('/')[-1]}"
+        return slugify(attachment['title'].split(extension)[0]) + extension
 
-    request = service.files().get_media(fileId=file_id)
+    service = authenticate_google_drive()
+    file_name = destination_filename(attachment)
+    file_path = f"./assets/images/event_flyers/{file_name}"
+
 
     with open(file_path, 'wb') as file:
+        request = service.files().get_media(fileId=attachment['fileId'])
         downloader = MediaIoBaseDownload(file, request)
         done=False
         while not done:
