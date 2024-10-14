@@ -144,8 +144,9 @@ def event_as_post(event):
 # Example usage
 if __name__ == '__main__':
     events = fetch_events()
-    for event in events:
-        post = event_as_post(event)
-        file_path=f"./_events/{slugify(post.metadata['title'])}.html"
-        with open(file_path, 'w') as f:
-            f.write(frontmatter.dumps(post))
+    posts = [event_as_post(event) for event in events]
+    for post in posts:
+        if post.metadata['flyer']:
+            post_path=f"./_events/{slugify(post.metadata['title'])}.html"
+            with open(post_path, 'w') as f:
+                f.write(frontmatter.dumps(post))
