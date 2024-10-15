@@ -11,33 +11,22 @@ from googleapiclient.errors import HttpError
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
-def authenticate_google_drive():
+
+def google_creds():
     SCOPES = [
-              'https://www.googleapis.com/auth/drive.readonly'
-            ]
+        "https://www.googleapis.com/auth/drive.readonly",
+        "https://www.googleapis.com/auth/calendar.readonly",
+    ]
 
     creds = None
-    if os.path.exists('token.json'):
-        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    if os.path.exists("token.json"):
+        creds = Credentials.from_authorized_user_file("token.json", SCOPES)
 
-    return build('drive', 'v3', credentials=creds)
-
-
-def authenticate_google_calendar():
-    SCOPES = ['https://www.googleapis.com/auth/calendar.readonly',
-            ]
-
-    creds = None
-    if os.path.exists('token.json'):
-        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
-
-    return build('calendar', 'v3', credentials=creds)
+    return creds
 
 
-def fetch_events():
+def fetch_events(service):
     try:
-        service = authenticate_google_calendar()
-
         events = []
         # Define the time range for future events (from now onwards)
         now = datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
@@ -75,12 +64,12 @@ def fetch_events():
     except HttpError as error:
         print(f"An error occurred: {error}")
 
-def fetch_drive_attachment(attachment):
+
+def fetch_drive_attachment(attachment, service):
     def destination_filename(attachment):
         extension = f".{attachment['mimeType'].split('/')[-1]}"
         return slugify(attachment['title'].split(extension)[0]) + extension
 
-    service = authenticate_google_drive()
     file_name = destination_filename(attachment)
     file_path = f"./assets/images/event_flyers/{file_name}"
 
@@ -96,8 +85,9 @@ def fetch_drive_attachment(attachment):
         print(f"Downloaded {file_name} to {file_path}")
     return file_path
 
-def get_first_image_attachment(event):
-    attachments = event.get('attachments', [])
+
+def get_first_image_attachment(event, service):
+    attachments = event.get("attachments", [])
 
     if not attachments:
         print(f"No attachments found for event {event['summary']}.")
@@ -111,8 +101,7 @@ def get_first_image_attachment(event):
         # Check if it's an image attachment (based on MIME type)
         if mime_type.startswith('image/'):
             print(f"Found image attachment: {attachment['title']}")
-            return fetch_drive_attachment(attachment)
-
+            return fetch_drive_attachment(attachment, service)
 
 
 def read_event_template(path):
@@ -120,30 +109,38 @@ def read_event_template(path):
         post = frontmatter.load(fh)
     return post
 
-def read_event_date(date):
-    timezone = pytz.timezone(date['timeZone'])
-    dateTime = datetime.fromisoformat(date['dateTime']).astimezone(timezone)
-    return dateTime
 
-def event_as_post(event):
+def read_event_date(date):
+    try:
+        timezone = pytz.timezone(date['timeZone'])
+        dateTime = datetime.fromisoformat(date["dateTime"]).astimezone(timezone)
+        return dateTime
+    except KeyError:
+        return datetime(1970, 1, 1)
 
     day = read_event_date(event['start']).strftime("%Y-%m-%d")
     start_time = read_event_date(event['start']).strftime("%I:%M%p")
     end_time = read_event_date(event['end']).strftime("%I:%M%p")
+def event_as_post(event, drive_service):
+
 
     post = read_event_template('_events/no-more.md')
     post.metadata['title'] = event['summary']
-    post.metadata['flyer'] = get_first_image_attachment(event)
     post.metadata['date'] = day
     post.metadata['time'] = f'{start_time} - {end_time}'
     post.metadata['orgOrBandName'] = event['organizer'].get('displayName', event['organizer']['email'])
     post.content = event.get('description', event['summary'])
+    post.metadata["flyer"] = get_first_image_attachment(event, drive_service)
 
     return post
 
 def run():
-    events = fetch_events()
-    posts = [event_as_post(event) for event in events]
+    creds = google_creds()
+    calendar_service = build("calendar", "v3", credentials=creds)
+    drive_service = build("drive", "v3", credentials=creds)
+    events = fetch_events(calendar_service)
+
+    posts = [event_as_post(event, drive_service) for event in events]
     for post in posts:
         if post.metadata['flyer']:
             post_path=f"./_events/{slugify(post.metadata['title'])}.html"
