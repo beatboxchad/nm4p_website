@@ -141,8 +141,7 @@ def event_as_post(event):
 
     return post
 
-# Example usage
-if __name__ == '__main__':
+def run():
     events = fetch_events()
     posts = [event_as_post(event) for event in events]
     for post in posts:
@@ -150,3 +149,7 @@ if __name__ == '__main__':
             post_path=f"./_events/{slugify(post.metadata['title'])}.html"
             with open(post_path, 'w') as f:
                 f.write(frontmatter.dumps(post))
+
+# Example usage
+if __name__ == '__main__':
+    print("yee, and I cannot stress this enough, haw")
