@@ -31,13 +31,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Fetch and Render Events from Google Calendar
-        id: build_events
-	image: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}/tools:${{ github.ref_name }}
-	steps:
-	    - python tools/sync_calendar.py
+        id: calendar
+        image: ghcr.io/${{ github.repository_owner }}/${{ github.repository }}/tools:${{ github.ref_name }}
+        run:
+          - python tools/sync_calendar.py
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
-	with:
+        with:
 	  source: ./
 	  destination: ./_site
       - name: Upload artifact
