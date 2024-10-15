@@ -153,3 +153,4 @@ def run():
 # Example usage
 if __name__ == '__main__':
     print("yee, and I cannot stress this enough, haw")
+    run()
