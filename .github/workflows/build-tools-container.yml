@@ -11,7 +11,7 @@ on:
       - 'feature/*'
 
 jobs:
-  build-and-push:
+  build-and-push-tools-container:
     runs-on: ubuntu-latest
     steps:
       # Step 1: Checkout the repository

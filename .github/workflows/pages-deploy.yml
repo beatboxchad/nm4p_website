@@ -33,6 +33,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Fetch and Render Events from Google Calendar
+        needs: build-and-push-tools-container
         run: |
           docker run --rm \
           -v ${{ github.workspace }}:/workspace \
