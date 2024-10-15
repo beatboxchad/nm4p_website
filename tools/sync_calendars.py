@@ -29,34 +29,41 @@ def fetch_events(service):
     try:
         events = []
         # Define the time range for future events (from now onwards)
-        now = datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
+        now = datetime.utcnow().isoformat() + "Z"  # 'Z' indicates UTC time
 
         # here's all the events
         calendar_list = service.calendarList().list().execute()
-        calendars = calendar_list.get('items',[])
-        
+        calendars = calendar_list.get("items", [])
 
         for calendar in calendars:
-            print(f"Calendar Summary: {calendar['summary']}, Calendar ID: {calendar['id']}")
+            print(
+                f"Calendar Summary: {calendar['summary']}, Calendar ID: {calendar['id']}"
+            )
             # Call the Calendar API to fetch events
-            events_result = service.events().list(
-            calendarId=calendar['id'],
-                timeMin=now,
-                singleEvents=True,
-                orderBy='startTime'
-            ).execute()
+            events_result = (
+                service.events()
+                .list(
+                    calendarId=calendar["id"],
+                    timeMin=now,
+                    singleEvents=True,
+                    orderBy="startTime",
+                )
+                .execute()
+            )
 
             # Get the list of events
-            events.extend(events_result.get('items', []))
+            events.extend(events_result.get("items", []))
 
         # Check if any events are found
         if not events[0]:
-            print('No upcoming events found.')
+            print("No upcoming events found.")
             return []
 
         # Print the events
         for event in events:
-            start = event['start'].get('dateTime', event['start'].get('date')) # what is this?
+            start = event["start"].get(
+                "dateTime", event["start"].get("date")
+            )  # what is this?
             print(f"{start} - {event['summary']}")
 
         return events
@@ -68,20 +75,19 @@ def fetch_events(service):
 def fetch_drive_attachment(attachment, service):
     def destination_filename(attachment):
         extension = f".{attachment['mimeType'].split('/')[-1]}"
-        return slugify(attachment['title'].split(extension)[0]) + extension
+        return slugify(attachment["title"].split(extension)[0]) + extension
 
     file_name = destination_filename(attachment)
     file_path = f"./assets/images/event_flyers/{file_name}"
 
-
-    with open(file_path, 'wb') as file:
-        request = service.files().get_media(fileId=attachment['fileId'])
+    with open(file_path, "wb") as file:
+        request = service.files().get_media(fileId=attachment["fileId"])
         downloader = MediaIoBaseDownload(file, request)
-        done=False
+        done = False
         while not done:
             status, done = downloader.next_chunk()
             print(f"Download progress: {int(status.progress()) * 100}%")
-            
+
         print(f"Downloaded {file_name} to {file_path}")
     return file_path
 
@@ -93,13 +99,12 @@ def get_first_image_attachment(event, service):
         print(f"No attachments found for event {event['summary']}.")
         return None
 
-
     # Loop through attachments and find the first image
     for attachment in attachments:
-        mime_type = attachment.get('mimeType', '')
+        mime_type = attachment.get("mimeType", "")
 
         # Check if it's an image attachment (based on MIME type)
-        if mime_type.startswith('image/'):
+        if mime_type.startswith("image/"):
             print(f"Found image attachment: {attachment['title']}")
             return fetch_drive_attachment(attachment, service)
 
@@ -112,27 +117,34 @@ def read_event_template(path):
 
 def read_event_date(date):
     try:
-        timezone = pytz.timezone(date['timeZone'])
+        timezone = pytz.timezone(date["timeZone"])
         dateTime = datetime.fromisoformat(date["dateTime"]).astimezone(timezone)
         return dateTime
     except KeyError:
         return datetime(1970, 1, 1)
 
-    day = read_event_date(event['start']).strftime("%Y-%m-%d")
-    start_time = read_event_date(event['start']).strftime("%I:%M%p")
-    end_time = read_event_date(event['end']).strftime("%I:%M%p")
+
 def event_as_post(event, drive_service):
+    print(event["summary"])
+    day = read_event_date(event["start"]).strftime(
+        "%Y-%m-%d"
+    )  # let's move this stuff into the templates actually. What
+    start_time = read_event_date(event["start"]).strftime("%I:%M%p")
+    end_time = read_event_date(event["end"]).strftime("%I:%M%p")
 
+    post = read_event_template("_events/no-more.md")
 
-    post = read_event_template('_events/no-more.md')
-    post.metadata['title'] = event['summary']
-    post.metadata['date'] = day
-    post.metadata['time'] = f'{start_time} - {end_time}'
-    post.metadata['orgOrBandName'] = event['organizer'].get('displayName', event['organizer']['email'])
-    post.content = event.get('description', event['summary'])
+    post.metadata["title"] = event["summary"]
     post.metadata["flyer"] = get_first_image_attachment(event, drive_service)
+    post.metadata["date"] = day
+    post.metadata["time"] = f"{start_time} - {end_time}"
+    post.metadata["orgOrBandName"] = event["organizer"].get(
+        "displayName", event["organizer"]["email"]
+    )
+    post.content = event.get("description", event["summary"])
 
     return post
+
 
 def run():
     creds = google_creds()
@@ -142,12 +154,13 @@ def run():
 
     posts = [event_as_post(event, drive_service) for event in events]
     for post in posts:
-        if post.metadata['flyer']:
-            post_path=f"./_events/{slugify(post.metadata['title'])}.html"
-            with open(post_path, 'w') as f:
+        if post.metadata["flyer"]:
+            post_path = f"./_events/{slugify(post.metadata['title'])}.html"
+            with open(post_path, "w") as f:
                 f.write(frontmatter.dumps(post))
 
+
 # Example usage
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("yee, and I cannot stress this enough, haw")
     run()
