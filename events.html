@@ -11,7 +11,7 @@
 <div id="calendar" class="net-pattern-bg">
 {% for event in site.events %}
 	<div id="event-{{ forloop.index0 }}" class="event" data-date="{{ event.date | date: '%Y%m%d' }}">
-		<img class="flyer"src="/assets/images/event_flyers/{{ event.flyer }}">
+		<img class="flyer"src="assets/images/event_flyers/{{ event.flyer }}">
 		<div class="info">
 			<div class="orgOrBand">
 				<h3>Who:</h3>
@@ -40,7 +40,7 @@
 {% endfor %}
 </div>
 
-<script src="/assets/js/events.js"></script>
+<script src="assets/js/events.js"></script>
 
 {% if false %}
 
