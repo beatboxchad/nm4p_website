@@ -125,10 +125,7 @@ def read_event_date(date):
 
 
 def event_as_post(event, drive_service):
-    print(event["summary"])
-    day = read_event_date(event["start"]).strftime(
-        "%Y-%m-%d"
-    )  # let's move this stuff into the templates actually. What
+    day = read_event_date(event["start"]).strftime("%Y-%m-%d")
     start_time = read_event_date(event["start"]).strftime("%I:%M%p")
     end_time = read_event_date(event["end"]).strftime("%I:%M%p")
 
@@ -136,7 +133,7 @@ def event_as_post(event, drive_service):
 
     post.metadata["title"] = event["summary"]
     post.metadata["flyer"] = get_first_image_attachment(event, drive_service)
-    post.metadata["date"] = day
+    post.metadata["date"] = f"{{ {event['start']} | date_to_string }}"
     post.metadata["time"] = f"{start_time} - {end_time}"
     post.metadata["orgOrBandName"] = event["organizer"].get(
         "displayName", event["organizer"]["email"]
