@@ -78,7 +78,7 @@ def fetch_drive_attachment(attachment, service):
         return slugify(attachment["title"].split(extension)[0]) + extension
 
     file_name = destination_filename(attachment)
-    file_path = f"./assets/images/event_flyers/{file_name}"
+    file_path = f"assets/images/event_flyers/{file_name}"
 
     with open(file_path, "wb") as file:
         request = service.files().get_media(fileId=attachment["fileId"])
@@ -89,7 +89,7 @@ def fetch_drive_attachment(attachment, service):
             print(f"Download progress: {int(status.progress()) * 100}%")
 
         print(f"Downloaded {file_name} to {file_path}")
-    return file_path
+    return file_name
 
 
 def get_first_image_attachment(event, service):
