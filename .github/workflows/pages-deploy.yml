@@ -1,12 +1,12 @@
 name: Deploy Jekyll site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
-  push:
-#    branches: [""]
-     branches: '*'
-  # Allows you to run this workflow manually from the Actions tab
+  # manually from the Actions tab
   workflow_dispatch:
+  # on a schedule
+  schedule:
+    # Runs every hour
+    - cron: '0 * * * *'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -24,6 +24,8 @@ jobs:
   build:
     environment:
       name: github-pages
+    if: github.ref == 'refs/heads/live'
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -57,6 +59,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: github.ref == 'refs/heads/live'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
