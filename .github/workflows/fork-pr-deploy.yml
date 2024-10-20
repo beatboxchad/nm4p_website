@@ -38,13 +38,14 @@ jobs:
         run: |
           CUSTOM_DOMAIN=$(curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             https://api.github.com/repos/${{ github.repository }}/pages | jq -r '.cname')
-          if [ "$CUSTOM_DOMAIN" != "null" ]; then
-            echo "$CUSTOM_DOMAIN" | tee CNAME
-            echo "url: '$CUSTOM_DOMAIN'" | tee -a _config.yml
-          else
-           echo "url: ${{ github.repository_owner }}.github.io" | tee -a _ config.yml
+          DOMAIN=$CUSTOM_DOMAIN
+          BASE_URL=/${{ github.event.repository.name }}/
+          if [ "$CUSTOM_DOMAIN" == "null" ]; then
+            DOMAIN=${{ github.repository_owner }}.github.io
           fi
-          echo "baseurl: '/${{ github.event.repository.name }}/${{ github.ref_name }}'" | tee -a _config.yml
+          echo "$DOMAIN" | tee CNAME
+          echo "url: '$DOMAIN'" | tee -a _config.yml
+          echo "baseurl: '$BASE_URL'" | tee -a _config.yml
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
