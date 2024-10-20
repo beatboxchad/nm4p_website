@@ -1,4 +1,4 @@
-name: Deploy Jekyll site to Pages
+name: Deploy to Pages on Fork Owner's Account
 
 on:
   # Runs on all pushes
@@ -39,12 +39,12 @@ jobs:
           CUSTOM_DOMAIN=$(curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             https://api.github.com/repos/${{ github.repository }}/pages | jq -r '.cname')
           if [ "$CUSTOM_DOMAIN" != "null" ]; then
-            echo "$CUSTOM_DOMAIN" > CNAME
-            echo "url: '$CUSTOM_DOMAIN'" >> _config.yml
+            echo "$CUSTOM_DOMAIN" | tee CNAME
+            echo "url: '$CUSTOM_DOMAIN'" | tee -a _config.yml
           else
-           echo "url: ${{ github.repository_owner }}.github.io" >> _ config.yml
+           echo "url: ${{ github.repository_owner }}.github.io" | tee -a _ config.yml
           fi
-          echo "baseurl: '/${{ github.ref_name }}'" >> _config.yml
+          echo "baseurl: '/${{ github.ref_name }}'" | tee -a _config.yml
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
