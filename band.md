@@ -14,7 +14,7 @@ TODO: Schedule next rehearsal
 
 {% for song in site.songs %}
 {% if song.status == "current" %}
-- [{{song.title}}]({{song.url}})
+- [{{song.title}}]({{song.url | relative_url}})
 {% endif %}
 {% endfor %}
 
@@ -23,7 +23,7 @@ We have arrangements for these, and are working them up to play out.
 
 {% for song in site.songs %}
 {% if song.status == "learning" %}
-- [{{song.title}}]({{song.url}})
+- [{{song.title}}]({{song.url | relative_url}})
 {% endif %}
 {% endfor %}
 
@@ -33,12 +33,12 @@ If you want to make an arrangement that'd be cool.
 
 {% for song in site.songs %}
 {% if song.status == "future" %}
-- [{{song.title}}]({{song.url}})
+- [{{song.title}}]({{song.url | relative_url}})
 {% endif %}
 {% endfor %}
 
 ## Resources
 
-[Chants with Arabic Rhythms](/chants_and_rhythms.html)
+[Chants with Arabic Rhythms](chants_and_rhythms.html)
 
 [Maqam World](https://maqamworld.com/)
