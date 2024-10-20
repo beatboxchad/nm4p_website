@@ -44,7 +44,7 @@ jobs:
           else
            echo "url: ${{ github.repository_owner }}.github.io" | tee -a _ config.yml
           fi
-          echo "baseurl: '/${{ github.ref_name }}'" | tee -a _config.yml
+          echo "baseurl: '/${{ github.event.repository.name }}/${{ github.ref_name }}'" | tee -a _config.yml
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
