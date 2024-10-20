@@ -39,6 +39,6 @@ If you want to make an arrangement that'd be cool.
 
 ## Resources
 
-[Chants with Arabic Rhythms](/chants_and_rhythms.html)
+[Chants with Arabic Rhythms](chants_and_rhythms.html)
 
 [Maqam World](https://maqamworld.com/)
