@@ -10,19 +10,20 @@
           href="{{ '/assets/images/logo-favicon.png' | relative_url }}">
   </head>
   <body>
-	<header data-num-images="5">
-		<div id="header-img-mask"></div>
-		<h1 id="title">{{ site.title }}</h1>  
-		{% include nav.html %}
-	</header>
-	<script src="{{ '/assets/js/header_images.js' | relative_url }}"></script>
-	{% include flag.html %}
+    <div id="site-url" style="display: none;">{{ site.url }}{{ site.baseurl }}</div>
+    <header data-num-images="5">
+      <div id="header-img-mask"></div>
+      <h1 id="title">{{ site.title }}</h1>  
+      {% include nav.html %}
+    </header>
+    <script src="{{ '/assets/js/header_images.js' | relative_url }}"></script>
+    {% include flag.html %}
     <main>
-		{{ content }}
-	</main>
-	{% include flag.html %}
-	<footer>
-	{% include footer.html %}
-	</footer>
+      {{ content }}
+    </main>
+    {% include flag.html %}
+    <footer>
+      {% include footer.html %}
+    </footer>
   </body>
 </html>
