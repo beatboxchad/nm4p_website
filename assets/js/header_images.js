@@ -10,8 +10,8 @@ function rotate_backgrounds(){
 		// change the photo
 		current_bg_img++;
 		current_bg_img = current_bg_img >= header.dataset.numImages ? 0 : current_bg_img;
-	    let next_url = document.querySelector("#site-url").innerText + "/assets/images/homepage_photos/photo_"+ current_bg_img +".jpg";
-            console.log(next_url);
+		let next_url = document.querySelector("#site-url").innerText + "/assets/images/homepage_photos/photo_"+ current_bg_img +".jpg";
+
 		header.style.backgroundImage = "url('"+next_url+"')";
 
 		mask.classList.toggle("black-background")
