@@ -34,19 +34,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: configure URLs
-        run: |
-          CUSTOM_DOMAIN=$(curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            https://api.github.com/repos/${{ github.repository }}/pages | jq -r '.cname')
-          DOMAIN=$CUSTOM_DOMAIN
-          BASE_URL=/${{ github.event.repository.name }}/
-          if [ "$CUSTOM_DOMAIN" == "null" ]; then
-            DOMAIN=${{ github.repository_owner }}.github.io
-          fi
-          echo "$DOMAIN" | tee CNAME
-          echo "url: '$DOMAIN'" | tee -a _config.yml
-          echo "baseurl: '$BASE_URL'" | tee -a _config.yml
-
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
